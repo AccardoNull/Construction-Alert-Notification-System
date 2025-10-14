@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Construction Alert Notification System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      text-align:justify;
+      padding-top: 30px;
+    }
+    .icon{
+      position: absolute;
+      top: 5px;
+      left: 100px;
+      width: 150px;
+      height: 150px;
+    }
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      gap: 140px;
+      padding: 20px;
+
+    }
+    .nav-bar a {
+      text-decoration: none;
+      color:#333;
+      font-weight: bold;
+    }
+    .nav-bar a:hover{
+      color: blue;
+      cursor:pointer;
+    }
+    h1 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Icon -->
+  <a href="Homepage_Login.html"><img src = "icon.jpg" class="icon" alt="Site Icon"></a>
+  <!-- Header -->
+  <div style="font-weight: bold; text-align: center;"><h1>Construction Alert Notification System</h1></div>
+  <div style="font-weight: bold; text-align: center;"><p>Road Construction Information For Greater Victoria Region</p></div>
+  <!-- Navigation Bar -->
+  <div class="nav-bar">
+    <a href="Homepage_Login.html">Home</a>
+    <a>News</a>
+    <a>About Us</a>
+    <a>Personalized Settings</a>
+    <a>Your Account</a>
+  </div>
+  <div style="width: 700px; height: 400px; border: #333 2px solid; box-sizing:border-box; margin: 40px auto;">
+  <div style="font-weight: bold; text-align: center; margin-top: 20px; margin-right: 480px; color: #333;"><a>New User Sign Up: </a></div>
+   <!-- Sign up inputs -->
+  <div style="margin-top: 30px; margin-left: 60px; color: #333;">
+  <form action="Login.html" onsubmit="return validatePassword();">
+  <label for="username" style="display:flex; margin:8px 0 4px;">Username:</label>
+  <input id="username" name="username" type="text" autocomplete="username" required
+         style="display:flex; padding: 5px 0; border:0; border-bottom:1px solid #ccc; background:transparent; outline:none;">
+
+  <label for="password" style="display:flex; margin:12px 0 4px;">Password:</label>
+  <div style="display:flex; gap:12px; flex:1;">
+  <input id="password" name="password" type="password" autocomplete="current-password" required
+         style="display:flex; padding: 5px 0; border:0; border-bottom:1px solid #ccc; background:transparent; outline:none;">
+  </div>
+  <label for="confirm_password" style="display:flex; margin:12px 0 4px;">Confirm Password:</label>
+  <div style="display:flex; gap:12px; flex:1;">
+  <input id="confirm_password" name="confirm_password" type="password" required
+         style="display:flex; padding: 5px 0; border:0; border-bottom:1px solid #ccc; background:transparent; outline:none;">
+
+  </div>
+  <p id="message" style="color:red; font-size:0.9em; margin-top:6px;"></p>
+  <button href="Login.html" style="margin-top:12px;">Submit</button>
+  <!-- Confirm password script-->
+  <script>
+const password = document.getElementById('password');
+const confirm = document.getElementById('confirm_password');
+const message = document.getElementById('message');
+
+function validatePassword() {
+  if (confirm.value === '') {
+    message.textContent = '';
+    confirm.setCustomValidity('');
+  } else if (password.value !== confirm.value) {
+    message.textContent = 'Passwords do not match.';
+    confirm.setCustomValidity('Passwords do not match.');
+  } else {
+    message.textContent = '';
+    confirm.setCustomValidity('');
+  }
+}
+
+password.addEventListener('input', validatePassword);
+confirm.addEventListener('input', validatePassword);
+</script>
+</form>
+</div>
+</body>
+</html>
