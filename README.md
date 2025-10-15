@@ -1,3 +1,3 @@
-- Include the medium fidelity prototype of the user interface design for a Construction Alert Notification System website; Include pdf file for easier preview and an interactive version through pptx file.
+- User interface design of a website called Construction Alert Notification System, which aims to relay road construction information to its users; medium fidelity prototype Includes both pdf file for easier preview and an interactive version through pptx file done by Google Slides.
 - Include Project Proposal and Project Presentation for overview.
 - HTML prototype is currently under development and hosted on Github Pages: https://accardonull.github.io/Construction-Alert-Notification-System-UI-Design/index.html
