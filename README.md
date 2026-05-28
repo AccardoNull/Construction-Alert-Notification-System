@@ -2,7 +2,7 @@ User interface design of Construction Alert Notification System website, aims to
 
 HTML/CSS demo hosted on Github Pages: https://accardonull.github.io/Construction-Alert-Notification-System/
 
-Contributions:
+Contribution Overview
 
 - Conducted user experience research and maintained design documents using Word to help design medium fidelity prototypes. Worked with testers to organize pilot sessions and maintained Excel spreadsheets to analyze user evaluation results using pivot tables and formulas. 
 
