@@ -1,3 +1,7 @@
+- User interface design of Construction Alert Notification System website, aims to relay customizable road construction information to users. PDF and PPTX Medium fidelity prototype included.
+  
+- Included Project Proposal and Project Presentation documents for technical overview.
+
 - HTML prototype hosted on Github Pages: https://accardonull.github.io/Construction-Alert-Notification-System/
 
 - Co-designed the user interface of a website using Figma and Microsoft 365 with a team of 5 students to relay road construction information to users in advance based on their personalized settings. 
